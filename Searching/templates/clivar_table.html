@@ -1,0 +1,48 @@
+<!-- ******************** Clinvar table****************-->  
+  <div class="scrollblock">
+    
+  <div id="clinvar">
+      <h3 class="text-center">information in Clinvar</h3>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#clinical-assertions" ng-click="Clinvarsearch1()">Clinical assertions</a></h4></div>
+      <div id="clinical-assertions" class="panel-collapse collapse">
+      <div class="panel-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Clinical significance <br />(Last evaluated)</th><th> Review status <br /> (Assertion method) </th><th>Collection method</th><th>Condition(s) <br /> (Mode of inheritance)</th><th>Origin</th><th style="min-width:130px;">Citations</th><th>Submitter - Study name</th><th>Submission accession</th>
+          </tr>
+        </thead>
+        <tbody id="info1">
+        </tbody>
+      </table>
+      </div>
+    </div>
+       <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#summary-evidence" ng-click="Clinvarsearch2()">Summary evidence</a></h4></div>
+
+    
+    <div id="summary-evidence" class="panel-collapse collapse">
+      <div class="panel-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Submitter</th><th>Families</th><th>Individuals</th><th>Allele origin</th><th>Ethnicity</th><th>Geographic origin</th><th style="min-width:130px;">Citations and Databases</th><th>Description</th>
+          </tr>
+        </thead>
+        <tbody id="info2">
+        </tbody>
+      </table>
+      </div>
+    </div>
+    </div></div></div>
+  </div>
+ <script type="text/javascript" src="../../static/js/app/hgvs_display.js"></script>
+
+  </div>
+<!-- ******************** Clinvar table****************-->  

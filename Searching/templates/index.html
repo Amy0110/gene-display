@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+{% include 'javascript.html' %}
+</head>
+<body>
+		<!-- start-header section-->
+			<div class="header">
+				<div class="container">
+				     <div class="top-header">
+						<div class="logo">
+							<h1><a href="index.html">Gene&Medicine</a></h1>
+						</div>
+						<div class="header-right">
+						<div class="login">
+						<a href="login.html">login</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>	
+				</div>
+			</div>
+		<!-- end-header section-->
+		<!--start-banner-->
+			<div class="banner">
+				<div class="container">
+					<div class="top-menu">
+					<span class="menu"><img src="../../static/images/nav.png" alt=""/> </span>
+						<ul>
+							<li><a  href="/" class="active">home</a></li>
+							<li><a  href="/hgvs/">HGVS</a></li>
+							<li><a  href="/symbol/">Gene Symbol</a></li>
+							<li><a  href="/medicine/">Medicine</a></li>
+							<li><a  href="/text/">Text Analysing</a></li>
+							<li><a  href="contact.html">contact</a></li>
+						</ul>
+						<!-- script for menu -->
+									
+							 <script>
+							 $("span.menu").click(function(){
+							 $(".top-menu ul").slideToggle("slow" , function(){
+							 });
+							 });
+							 </script>
+						<!-- //script for menu -->
+
+					</div>
+					<section class="slider">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="slider-info">
+										<h2>Welcome</h2>
+										<p>Gene technology changes our life!</p>
+									</div>
+								</li>
+								<li>
+									<div class="slider-info">
+									<h2>Welcome</h2>
+										<p>Input what you want,and get whant you need.</p>
+									</div>
+								</li>
+								<li>	
+									<div class="slider-info">
+									<h2>Welcome</h2>
+										<p>Be devoted into researching.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+						<!-- FlexSlider -->
+							  <script defer src="../../static/js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+									$(function(){
+									  SyntaxHighlighter.all();
+									});
+									$(window).load(function(){
+									  $('.flexslider').flexslider({
+										animation: "slide",
+										start: function(slider){
+										  $('body').removeClass('loading');
+										}
+									  });
+									});
+							  </script>
+						<!-- FlexSlider -->
+				</div>	
+			</div>
+		<!--end-banner-->
+			<div class="banner-bottom">
+				<div class="container">
+				<div class="droop-down">
+					<div class="col-md-3 droop">
+							<div class="sort-by">
+		            <label>Items </label>
+		            <select class="sel">
+		                            <option value="">
+		                   HGVS              </option>
+		                            <option value="">
+		                 Gene Symbol              </option>
+		                            <option value="">
+		                   Medicine               </option>
+										
+		            </select>
+		        </div>
+					</div>
+					<div class="col-md-3 droop">
+							<div class="sort-by">
+		            <label>Name</label>
+		            
+		        </div>
+					</div>
+					
+					<div class="col-md-3 search">
+					<form>
+					<input type="submit" value="search">
+					</form>				
+					</div>
+					<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				
+				
+		{% include 'bottom.html' %}
+
+	
+</body>
+</html>
+	

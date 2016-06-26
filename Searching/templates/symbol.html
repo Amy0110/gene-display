@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>About</title>
+{% include 'javascript.html' %}
+</head>
+<body>
+		<!-- start-header section-->
+			<div class="header">
+				<div class="container">
+				     <div class="top-header">
+						<div class="logo">	
+						<h1><a href="index.html">Gene&Medicine</a></h1>
+						</div>
+						<div class="header-right">
+						<div class="login">
+						<a href="login.html">login</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>	
+				</div>
+			</div>
+		<!-- end-header section-->
+		<!--start-banner-->
+			<div class="banner ban1">
+				<div class="container">
+					<div class="top-menu">
+					<span class="menu"><img src="../../static/images/nav.png" alt=""/> </span>
+					<ul>
+							<li><a  href="/" class="active">home</a></li>
+							<li><a  href="/hgvs/">HGVS</a></li>
+							<li><a  href="/symbol/">Gene Symbol</a></li>
+							<li><a  href="/medicine/">Medicine</a></li>
+							<li><a  href="/text/">Text Analysing</a></li>
+							<li><a  href="contact.html">contact</a></li>
+						</ul>
+						<!-- script for menu -->
+									
+							 <script>
+							 $("span.menu").click(function(){
+							 $(".top-menu ul").slideToggle("slow" , function(){
+							 });
+							 });
+							 </script>
+						<!-- //script for menu -->
+					</div>
+					</div>	
+			</div>
+		<!--end-banner-->
+			<div class="banner-bottom">
+				<div class="container">
+				<form action="" method="request">
+				{% csrf_token %}
+        		{{form}}
+         		<input type="submit" value="Search">
+   				 </form>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="clearfix"> </div>
+			</div>	
+		{% include 'bottom.html' %}
+
+</body>
+</html>
+	
